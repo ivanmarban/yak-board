@@ -1,9 +1,16 @@
 {
   "name": "yak-board",
-  "version": "0.0.0",
-  "author": "Ivan Marban <ivan.marban@gmail.com>",
+  "version": "0.1.0",
+  "author": {
+    "name": "Ivan Marban",
+    "email": "ivan.marban@gmail.com"
+  },
   "description": "Yet Another Kanban Board",
-  "license": null,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivanmarban/yak-board.git"
+  },
+  "license": "MIT",
   "main": "./dist/electron/main.js",
   "scripts": {
     "build": "node .electron-vue/build.js && electron-builder",
@@ -19,7 +26,7 @@
     "postinstall": "npm run lint:fix"
   },
   "build": {
-    "productName": "yak-board",
+    "productName": "Yak Board",
     "appId": "org.simulatedgreg.electron-vue",
     "directories": {
       "output": "build"
@@ -53,7 +60,12 @@
     }
   },
   "dependencies": {
-    "vue": "^2.3.3"
+    "jquery": "^3.3.1",
+    "nedb-promises": "^1.2.0",
+    "semantic-ui-css": "^2.3.1",
+    "underscore": "^1.8.3",
+    "vue": "^2.3.3",
+    "vuedraggable": "^2.16.0"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
